@@ -16,6 +16,7 @@
       <span class="icon">
         {% include svg/tags.svg %}
       </span>&nbsp;<span class="tag-name">{{ tag }}</span>
+      <span class="tag-count">{{ site.tags[tag] | size }}</span>
     {% if tags_page %}</a>{% else %}</span>{% endif %}
   {% endfor %}
 </div>

@@ -2,5 +2,10 @@
 # Use a comment to ensure Jekyll reads the file to be transformed into CSS later
 # only main files contain this front matter, not partials.
 ---
+$body-bg-color: #f0d9b7;
+
+$body-bg-image: url("https://www.transparenttextures.com/patterns/grey-sandbag.png");
+
+$sidebar-bgimage: url(../image/bg_chip.jpg);
 
 @import "hydeout";

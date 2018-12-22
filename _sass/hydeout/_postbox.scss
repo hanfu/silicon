@@ -1,0 +1,11 @@
+/*postbox is banner-like box that is used to list several posts*/
+
+.postbox {
+  background-size: cover;
+  background-position: center top;
+  background-color: darken($body-bg-color, 40%);
+  background-blend-mode: screen;
+  padding: 3rem;
+  margin-bottom: 1rem;
+  border: 0.4rem solid $body-bg-color;
+}

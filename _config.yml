@@ -3,11 +3,11 @@ markdown:         kramdown
 highlighter:      rouge
 
 # Setup
-title:            Hanfu
-tagline:          'profile resume'
+title:            HANFU
+tagline:          'CS Profile'
 description:      'and his silicon advanture'
-url:              hanfu.github.io
-baseurl:          '/silicon/'
+url:              hanfu.us
+baseurl:          '/silicon'
                   # the optional subpath of your site, e.g. "/blog"
                   # NB: This applies to all pages in your Jekyll site.
                   # If you want to move just the blog index pages but keep
@@ -36,10 +36,10 @@ sidebar_home_link:  true
 
 
 # Disqus Comments
-disqus:
+# disqus:
     # Leave shortname blank to disable comments site-wide.
     # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
-    shortname: Han's_disqus_shortname
+    # shortname: Han's_disqus_shortname
 
 
 #collections:

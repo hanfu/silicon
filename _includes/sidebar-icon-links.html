@@ -1,53 +1,34 @@
 <nav id="sidebar-icon-links">
-  {% if site.hydeout.repo %}
     <a id="github-link"
-       class="icon" title="Github Project" aria-label="Github Project"
-       href="{{ site.hydeout.repo }}">
+       class="icon" title="Github" aria-label="Github"
+       href="https://github.com/hanfu/">
       {% include svg/github.svg %}
     </a>
-    <a id="github-download-link"
-       class="icon" title="Download" aria-label="Download"
-       href="{{ site.hydeout.repo }}/archive/v{{ site.hydeout.version }}.zip">
-      {% include svg/download.svg %}
-    </a>
-  {% endif %}
 
-  <a id="subscribe-link"
+    <a id="email-link"
+       class="icon" title="Email" aria-label="Email Hanfu"
+       href="mailto:zhhfu29@gmail.com">
+      {% include svg/email.svg %}
+    </a>
+
+  <a id="linkedin-link"
+     class="icon" title="Linkedin" aria-label="Linkedin"
+     href="https://www.linkedin.com/in/hanfu/">
+    {% include svg/linkedin.svg %}
+  </a>
+
+    <!--a id="subscribe-link"
      class="icon" title="Subscribe" aria-label="Subscribe"
      href="{{ site.baseurl }}/{{ site.feed.path | default: 'feed.xml' }}">
     {% include svg/feed.svg %}
+  </a-->
+
+      <a id="resume.pdf-link"
+     class="icon" title="Resume.PDF" aria-label="Download Resume in PDF"
+     href="{{site.baseurl}}/assets/image/resume.pdf">
+    {% include svg/pdf.svg %}
   </a>
 
-  {% comment %}
-    Check if we have tag or search pages page active before linking to it.
-  {% endcomment %}
-  {% assign tags_page = true %}
-  {% assign search_page = true %}
-  {% for node in site.pages %}
-    {% if node.layout == "tags" %}
-      {% assign tags_page = node %}
-    {% elsif node.layout == "search" %}
-      {% assign search_page = node %}
-    {% endif %}
-  {% endfor %}
-
-  {% if tags_page %}
-    <a id="tags-link"
-       class="icon{% if page.url == '/tags' %} active{% endif %}"
-       title="Tags" aria-label="Tags"
-       href="{{ site.baseurl }}{{ tags_page.url }}">
-      {% include svg/tags.svg %}
-    </a>
-  {% endif %}
-
-  {% if search_page %}
-    <a id="search-link"
-       class="icon{% if page.url == '/search' %} active{% endif %}"
-       title="Search" aria-label="Search"
-       href="{{ site.baseurl }}{{ search_page.url }}">
-      {% include svg/search.svg %}
-    </a>
-  {% endif %}
 
   {% include custom-icon-links.html %}
 </nav>
