@@ -1,0 +1,11 @@
+---
+layout: page
+title: All Topics
+---
+
+  {% for topic in site.topics %}
+    <li>
+      <h1><a href="{{ topic.url }}">{{ topic.name }}</a></h1>
+      <p>{{ topic.content }}</p>
+    </li>
+  {% endfor %}

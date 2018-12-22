@@ -1,0 +1,7 @@
+# https://jekyllrb.com/docs/step-by-step/06-data-files/
+# file available as  site.data.navigation 
+
+- name: Home
+  link: /
+- name: About
+  link: /about.html
