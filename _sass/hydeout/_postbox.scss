@@ -3,9 +3,22 @@
 .postbox {
   background-size: cover;
   background-position: center top;
-  background-color: darken($body-bg-color, 40%);
+  background-color: darken($body-bg-color, 20%);
   background-blend-mode: screen;
-  padding: 3rem;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+  /*padding: 3rem;
   margin-bottom: 1rem;
   border: 0.4rem solid $body-bg-color;
+   width: 100%;
+   margin: 0;
+   top: 0;
+   left: 0;*/
+
+  margin-left: -$section-spacing * 2;
+  margin-right: -$section-spacing * 2;
+  padding: $section-spacing * 2;
+
+
 }
